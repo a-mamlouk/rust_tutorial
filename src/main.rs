@@ -1,6 +1,18 @@
 fn main() {
-    println!("Hello, world!");
-    let x= 5;
+    println!("Hello, world!\n");
+    let x = 5;
+    print!("The value of x is: {}\n", x);
+    {
+        let x = 2;
+        print!("The value of x is: {}\n", x);
+    }
+    let x = x + 1;
+    print!("The value of x is: {}\n", x);
+    let x = "Shit this is working cause i redined x";
+    print!("The value of x is: {}\n", x);
+    const SECONDS_IN_MINUTES: u32 = 60;
+    print!("The value of SIM is: {}\n", SECONDS_IN_MINUTES);
+    //SECONDS_IN_MINUTES = 9; doesnt work cause it's a constant duhhh ...
 }
 
 //cargo init
