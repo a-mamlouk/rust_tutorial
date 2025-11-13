@@ -1,6 +1,6 @@
 fn main() {
-println!("Hello, world!")
-let x = 5;
+    println!("Hello, world!");
+    let x= 5;
 }
 
 //cargo init
