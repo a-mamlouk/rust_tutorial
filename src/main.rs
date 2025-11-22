@@ -13,6 +13,32 @@ fn main() {
     const SECONDS_IN_MINUTES: u32 = 60;
     print!("The value of SIM is: {}\n", SECONDS_IN_MINUTES);
     //SECONDS_IN_MINUTES = 9; doesnt work cause it's a constant duhhh ...
+
+    let number: u8 = 10;
+    print!("the value of the unsigned number is {}.\n", number);
+
+    let floating_point: f32 = 10.9;
+    print!("the value of the floating number is {}.\n", floating_point);
+
+    let booly: bool = true;
+    print!("the value of booly is {}.\n", booly);
+
+    let letter: char = 'A';
+    print!("la valeur de letter est : {}\n", letter);
+
+    //Tuples
+    let tuple = (1, true, 's');
+    let mut tuple2: (i8, bool, char) = (1, true, 's');
+    print!("my 1st element in tuple {}\n", tuple.0);
+    print!("my 3rd element in tuple2 {}\n", tuple2.2);
+    tuple2.2 = 'x';
+    print!("my new 3rd element in tuple2 {}\n", tuple2.2);
+
+    //Arrays
+    let mut array: [i8; 5] = [1, 2, 3, 4, 5];
+    print!("my 4th element in array is: {}\n", array[3]);
+    array[4] = 10;
+    print!("my new 4th element in array is: {}\n", array[4]);   
 }
 
 //cargo init
